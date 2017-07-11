@@ -7,37 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FD203031F147C27001A0CEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD203021F147C27001A0CEB /* main.m */; };
-		2FD203061F147C27001A0CEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD203051F147C27001A0CEB /* AppDelegate.m */; };
-		2FD203091F147C27001A0CEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD203081F147C27001A0CEB /* ViewController.m */; };
 		2FD2030C1F147C27001A0CEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2030A1F147C27001A0CEB /* Main.storyboard */; };
 		2FD2030E1F147C27001A0CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2030D1F147C27001A0CEB /* Assets.xcassets */; };
 		2FD203111F147C27001A0CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2030F1F147C27001A0CEB /* LaunchScreen.storyboard */; };
-		2FD2031F1F147D9F001A0CEB /* creation_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD203191F147D9F001A0CEB /* creation_unchecked.png */; };
-		2FD203201F147D9F001A0CEB /* person2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2031A1F147D9F001A0CEB /* person2.png */; };
-		2FD203211F147D9F001A0CEB /* person_click.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2031B1F147D9F001A0CEB /* person_click.png */; };
-		2FD203221F147D9F001A0CEB /* selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2031C1F147D9F001A0CEB /* selected.png */; };
-		2FD203231F147D9F001A0CEB /* store.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2031D1F147D9F001A0CEB /* store.png */; };
-		2FD203241F147D9F001A0CEB /* store_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2031E1F147D9F001A0CEB /* store_unchecked.png */; };
+		2FD2032E1F14817C001A0CEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD2032B1F14817C001A0CEB /* AppDelegate.m */; };
+		2FD203331F148227001A0CEB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FD203311F148227001A0CEB /* Info.plist */; };
+		2FD203341F148227001A0CEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD203321F148227001A0CEB /* main.m */; };
+		2FD203371F148289001A0CEB /* YQHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD203361F148289001A0CEB /* YQHomeViewController.m */; };
+		2FD203411F14857A001A0CEB /* YQtabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD203401F14857A001A0CEB /* YQtabBarViewController.m */; };
+		2FD203441F14A02F001A0CEB /* YQTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD203431F14A02F001A0CEB /* YQTabBar.m */; };
+		2FD203471F14AEA1001A0CEB /* YQMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD203461F14AEA1001A0CEB /* YQMineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2FD202FE1F147C27001A0CEB /* CreativeCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreativeCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FD203021F147C27001A0CEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2FD203041F147C27001A0CEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2FD203051F147C27001A0CEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2FD203071F147C27001A0CEB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2FD203081F147C27001A0CEB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2FD2030B1F147C27001A0CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FD2030D1F147C27001A0CEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FD203101F147C27001A0CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2FD203121F147C27001A0CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FD203191F147D9F001A0CEB /* creation_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = creation_unchecked.png; sourceTree = "<group>"; };
-		2FD2031A1F147D9F001A0CEB /* person2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person2.png; sourceTree = "<group>"; };
-		2FD2031B1F147D9F001A0CEB /* person_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person_click.png; sourceTree = "<group>"; };
-		2FD2031C1F147D9F001A0CEB /* selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selected.png; sourceTree = "<group>"; };
-		2FD2031D1F147D9F001A0CEB /* store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store.png; sourceTree = "<group>"; };
-		2FD2031E1F147D9F001A0CEB /* store_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store_unchecked.png; sourceTree = "<group>"; };
+		2FD2032A1F14817C001A0CEB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2FD2032B1F14817C001A0CEB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2FD203311F148227001A0CEB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FD203321F148227001A0CEB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2FD203351F148289001A0CEB /* YQHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQHomeViewController.h; sourceTree = "<group>"; };
+		2FD203361F148289001A0CEB /* YQHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQHomeViewController.m; sourceTree = "<group>"; };
+		2FD2033F1F14857A001A0CEB /* YQtabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQtabBarViewController.h; sourceTree = "<group>"; };
+		2FD203401F14857A001A0CEB /* YQtabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQtabBarViewController.m; sourceTree = "<group>"; };
+		2FD203421F14A02F001A0CEB /* YQTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQTabBar.h; sourceTree = "<group>"; };
+		2FD203431F14A02F001A0CEB /* YQTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQTabBar.m; sourceTree = "<group>"; };
+		2FD203451F14AEA1001A0CEB /* YQMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQMineViewController.h; sourceTree = "<group>"; };
+		2FD203461F14AEA1001A0CEB /* YQMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQMineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +52,6 @@
 		2FD202F51F147C27001A0CEB = {
 			isa = PBXGroup;
 			children = (
-				2FD203181F147D9F001A0CEB /* drawable-xhdpi */,
 				2FD203001F147C27001A0CEB /* CreativeCloud */,
 				2FD202FF1F147C27001A0CEB /* Products */,
 			);
@@ -71,14 +68,11 @@
 		2FD203001F147C27001A0CEB /* CreativeCloud */ = {
 			isa = PBXGroup;
 			children = (
-				2FD203041F147C27001A0CEB /* AppDelegate.h */,
-				2FD203051F147C27001A0CEB /* AppDelegate.m */,
-				2FD203071F147C27001A0CEB /* ViewController.h */,
-				2FD203081F147C27001A0CEB /* ViewController.m */,
-				2FD2030A1F147C27001A0CEB /* Main.storyboard */,
+				2FD2033C1F148516001A0CEB /* Tabbar */,
+				2FD203381F148507001A0CEB /* Mine */,
+				2FD203251F148167001A0CEB /* Home */,
+				2FD203291F14817C001A0CEB /* Other */,
 				2FD2030D1F147C27001A0CEB /* Assets.xcassets */,
-				2FD2030F1F147C27001A0CEB /* LaunchScreen.storyboard */,
-				2FD203121F147C27001A0CEB /* Info.plist */,
 				2FD203011F147C27001A0CEB /* Supporting Files */,
 			);
 			path = CreativeCloud;
@@ -87,22 +81,114 @@
 		2FD203011F147C27001A0CEB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2FD203021F147C27001A0CEB /* main.m */,
+				2FD203311F148227001A0CEB /* Info.plist */,
+				2FD203321F148227001A0CEB /* main.m */,
+				2FD2030F1F147C27001A0CEB /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2FD203181F147D9F001A0CEB /* drawable-xhdpi */ = {
+		2FD203251F148167001A0CEB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				2FD203191F147D9F001A0CEB /* creation_unchecked.png */,
-				2FD2031A1F147D9F001A0CEB /* person2.png */,
-				2FD2031B1F147D9F001A0CEB /* person_click.png */,
-				2FD2031C1F147D9F001A0CEB /* selected.png */,
-				2FD2031D1F147D9F001A0CEB /* store.png */,
-				2FD2031E1F147D9F001A0CEB /* store_unchecked.png */,
+				2FD203261F148167001A0CEB /* Controller */,
+				2FD203271F148167001A0CEB /* Model */,
+				2FD203281F148167001A0CEB /* View */,
 			);
-			path = "drawable-xhdpi";
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2FD203261F148167001A0CEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2FD203351F148289001A0CEB /* YQHomeViewController.h */,
+				2FD203361F148289001A0CEB /* YQHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FD203271F148167001A0CEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FD203281F148167001A0CEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FD203291F14817C001A0CEB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2FD2032A1F14817C001A0CEB /* AppDelegate.h */,
+				2FD2032B1F14817C001A0CEB /* AppDelegate.m */,
+				2FD2030A1F147C27001A0CEB /* Main.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		2FD203381F148507001A0CEB /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				2FD203391F148507001A0CEB /* Controller */,
+				2FD2033A1F148507001A0CEB /* Model */,
+				2FD2033B1F148507001A0CEB /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		2FD203391F148507001A0CEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2FD203451F14AEA1001A0CEB /* YQMineViewController.h */,
+				2FD203461F14AEA1001A0CEB /* YQMineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FD2033A1F148507001A0CEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FD2033B1F148507001A0CEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FD2033C1F148516001A0CEB /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				2FD2033D1F148516001A0CEB /* Colltroller */,
+				2FD2033E1F148516001A0CEB /* View */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		2FD2033D1F148516001A0CEB /* Colltroller */ = {
+			isa = PBXGroup;
+			children = (
+				2FD2033F1F14857A001A0CEB /* YQtabBarViewController.h */,
+				2FD203401F14857A001A0CEB /* YQtabBarViewController.m */,
+			);
+			path = Colltroller;
+			sourceTree = "<group>";
+		};
+		2FD2033E1F148516001A0CEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FD203421F14A02F001A0CEB /* YQTabBar.h */,
+				2FD203431F14A02F001A0CEB /* YQTabBar.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +217,9 @@
 		2FD202F61F147C27001A0CEB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YQ;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = YQ;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					2FD202FD1F147C27001A0CEB = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -164,15 +251,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FD203201F147D9F001A0CEB /* person2.png in Resources */,
-				2FD203241F147D9F001A0CEB /* store_unchecked.png in Resources */,
-				2FD203231F147D9F001A0CEB /* store.png in Resources */,
 				2FD203111F147C27001A0CEB /* LaunchScreen.storyboard in Resources */,
 				2FD2030E1F147C27001A0CEB /* Assets.xcassets in Resources */,
-				2FD203211F147D9F001A0CEB /* person_click.png in Resources */,
-				2FD203221F147D9F001A0CEB /* selected.png in Resources */,
 				2FD2030C1F147C27001A0CEB /* Main.storyboard in Resources */,
-				2FD2031F1F147D9F001A0CEB /* creation_unchecked.png in Resources */,
+				2FD203331F148227001A0CEB /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,9 +265,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FD203091F147C27001A0CEB /* ViewController.m in Sources */,
-				2FD203061F147C27001A0CEB /* AppDelegate.m in Sources */,
-				2FD203031F147C27001A0CEB /* main.m in Sources */,
+				2FD203441F14A02F001A0CEB /* YQTabBar.m in Sources */,
+				2FD203411F14857A001A0CEB /* YQtabBarViewController.m in Sources */,
+				2FD203341F148227001A0CEB /* main.m in Sources */,
+				2FD2032E1F14817C001A0CEB /* AppDelegate.m in Sources */,
+				2FD203371F148289001A0CEB /* YQHomeViewController.m in Sources */,
+				2FD203471F14AEA1001A0CEB /* YQMineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +283,7 @@
 				2FD2030B1F147C27001A0CEB /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		2FD2030F1F147C27001A0CEB /* LaunchScreen.storyboard */ = {
@@ -346,6 +432,7 @@
 				2FD203171F147C27001A0CEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
