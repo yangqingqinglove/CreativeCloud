@@ -11,7 +11,7 @@
 #import "YQEnterpriseTableViewController.h"
 
 
-@interface YQHomeViewController ()
+@interface YQHomeViewController ()<UIGestureRecognizerDelegate>
 
 // 添加的子控制器的属性
 @property(nonatomic,strong)YQEnterpriseTableViewController * EnterpriseTvc;
@@ -51,7 +51,14 @@
     
     //接受各种通知的情况
     [self addNoties];
-
+    
+    //添加,手势,长按和 点动
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]init];
+    UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(pan:)];
+    pan.delegate = self ;
+    [self.topImageView addGestureRecognizer:pan];
+    [self.topImageView addGestureRecognizer:tap];
+    
     
 }
 
@@ -80,6 +87,7 @@
     }
     return _PersonalTvc;
 }
+
 
 #pragma mark - Top BUTTON的点击事件
 - (IBAction)personalBtnClick:(UIButton *)sender {
@@ -167,13 +175,56 @@
     
     
     self.contentoffset = offsets;
-    
     NSLog(@"offsets === %f", offsets);
-    
-    
-
 }
 
+#pragma mark - 添加各种手势的方法
+-(void)pan:(UIPanGestureRecognizer *)pan{
+    
+    // 边界判断:
+    CGFloat topMarginOfImgButton = self.topImageView.frame.origin.y;
+    CGFloat leftMarginOfImgButton = self.topImageView.frame.origin.x;
+    CGFloat bottomMarginOfImgButton = self.topImageView.frame.size.height - topMarginOfImgButton - self.topImageView.frame.size.height;
+    CGFloat rightMarginOfImgButton = self.topImageView.frame.size.width - leftMarginOfImgButton - self.topImageView.frame.size.width;
+    
+    BOOL top = (topMarginOfImgButton  ) < 0;
+    BOOL left = ((leftMarginOfImgButton ) < 0);
+    BOOL right = ((rightMarginOfImgButton ) < 0);
+    BOOL bottom = ((bottomMarginOfImgButton  ) < 0);
+//    && right && bottom
+    NSLog(@"y = %f",topMarginOfImgButton);
+    NSLog(@"y = %f",leftMarginOfImgButton);
+    CGPoint translateP = [pan translationInView:self.topImageView];
+
+    
+    if(top ){
+    
+       self.topImageView.transform = CGAffineTransformTranslate(self.topImageView.transform, translateP.x, 0);
+        [pan setTranslation:CGPointZero inView:self.topImageView];
+        return;
+        
+    }else if (left){
+        
+        self.topImageView.transform = CGAffineTransformTranslate(self.topImageView.transform, 0, translateP.y);
+        [pan setTranslation:CGPointZero inView:self.topImageView];
+        return;
+
+    }
+//    else if (bottom){
+//        
+//        return;
+//    }else if(right){
+//        
+//        return;
+//    }
+    
+    
+        //CGPoint velocityPan = [pan velocityInView:self.topImageView];// 打印的速度!
+    self.topImageView.transform = CGAffineTransformTranslate(self.topImageView.transform, translateP.x, translateP.y);
+    
+    [pan setTranslation:CGPointZero inView:self.topImageView];
+    
+}
 
 
 

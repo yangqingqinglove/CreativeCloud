@@ -21,8 +21,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="classification" translatesAutoresizingMaskIntoConstraints="NO" id="ut1-WN-mH8">
-                                <rect key="frame" x="323" y="615" width="52" height="52"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="classification" translatesAutoresizingMaskIntoConstraints="NO" id="ut1-WN-mH8">
+                                <rect key="frame" x="325" y="617" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="N8i-cB-HwS"/>
+                                    <constraint firstAttribute="width" constant="50" id="Ykh-Ar-vXi"/>
+                                </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Gh-Fy-RR8">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
