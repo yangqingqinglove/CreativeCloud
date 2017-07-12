@@ -10,4 +10,8 @@
 
 @interface YQPersonalTableViewController : UITableViewController
 
+// 监听contentoffSets的值的变化
+@property(nonatomic,assign)CGFloat contentoffSets;
+
+
 @end
