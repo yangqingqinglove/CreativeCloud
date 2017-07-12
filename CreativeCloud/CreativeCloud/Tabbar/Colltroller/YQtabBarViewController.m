@@ -44,14 +44,15 @@
 - (void)setControllers{
     
     //配置的各个tabbar对应的controller
-    self.vc1 = [[YQHomeViewController alloc] init];
-    self.vc1.view.backgroundColor = [UIColor redColor];
-    self.vc1.tabBarItem = [self itemWithSelectedImage:@"store_unchecked.png" image:@"store.png" title:@"首页"];
+    UIStoryboard * sb = [UIStoryboard storyboardWithName:@"YQHome" bundle:nil ];
+    self.vc1 = sb.instantiateInitialViewController;
+    
+    self.vc1.tabBarItem = [self itemWithSelectedImage:@"mall_click" image:@"mall" title:@"首页"];
     
     //配置的各个tabbar对应的controller
-    self.vc2 = [[YQMineViewController alloc] init];
-    self.vc2.view.backgroundColor = [UIColor blueColor];
-    self.vc2.tabBarItem = [self itemWithSelectedImage:@"person_click.png" image:@"person2.png" title:@"个人"];
+    UIStoryboard * sb1 = [UIStoryboard storyboardWithName:@"YQMine" bundle:nil ];
+    self.vc2 = sb1.instantiateInitialViewController;
+    self.vc2.tabBarItem = [self itemWithSelectedImage:@"person_click" image:@"person" title:@"个人"];
     
 //    //配置的各个tabbar对应的controller
 //    self.vc3 = [[UIViewController alloc] init];
@@ -75,7 +76,9 @@
     
     UIImage *im = [[UIImage imageNamed:image] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:title image:im selectedImage:im];
+    UIImage * selectIm =[[UIImage imageNamed:selectImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:title image:im selectedImage:selectIm];
     
     return item;
     
@@ -86,7 +89,6 @@
 - (void)tabBarDidClickPlusButton:(YQTabBar *)tabBar{
     // 自定义的tabbar按钮的点击事件:
     // 中间按钮点击了
-    
     
     NSLog(@"中间按钮点击了!");
     

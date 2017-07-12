@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F5177DB1F15B58900F63EC4 /* YQPersonalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5177DA1F15B58900F63EC4 /* YQPersonalTableViewController.m */; };
+		2F5177DE1F15B5CF00F63EC4 /* YQEnterpriseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5177DD1F15B5CF00F63EC4 /* YQEnterpriseTableViewController.m */; };
+		2F5177E01F15BBE700F63EC4 /* YQHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5177DF1F15BBE700F63EC4 /* YQHome.storyboard */; };
+		2F5177E21F15BE0600F63EC4 /* YQMine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5177E11F15BE0600F63EC4 /* YQMine.storyboard */; };
 		2FD2030C1F147C27001A0CEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2030A1F147C27001A0CEB /* Main.storyboard */; };
 		2FD2030E1F147C27001A0CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2030D1F147C27001A0CEB /* Assets.xcassets */; };
 		2FD203111F147C27001A0CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2030F1F147C27001A0CEB /* LaunchScreen.storyboard */; };
@@ -20,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F5177D91F15B58900F63EC4 /* YQPersonalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQPersonalTableViewController.h; sourceTree = "<group>"; };
+		2F5177DA1F15B58900F63EC4 /* YQPersonalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQPersonalTableViewController.m; sourceTree = "<group>"; };
+		2F5177DC1F15B5CF00F63EC4 /* YQEnterpriseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQEnterpriseTableViewController.h; sourceTree = "<group>"; };
+		2F5177DD1F15B5CF00F63EC4 /* YQEnterpriseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQEnterpriseTableViewController.m; sourceTree = "<group>"; };
+		2F5177DF1F15BBE700F63EC4 /* YQHome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YQHome.storyboard; sourceTree = "<group>"; };
+		2F5177E11F15BE0600F63EC4 /* YQMine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YQMine.storyboard; sourceTree = "<group>"; };
 		2FD202FE1F147C27001A0CEB /* CreativeCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreativeCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD2030B1F147C27001A0CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FD2030D1F147C27001A0CEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +113,11 @@
 			children = (
 				2FD203351F148289001A0CEB /* YQHomeViewController.h */,
 				2FD203361F148289001A0CEB /* YQHomeViewController.m */,
+				2F5177DF1F15BBE700F63EC4 /* YQHome.storyboard */,
+				2F5177D91F15B58900F63EC4 /* YQPersonalTableViewController.h */,
+				2F5177DA1F15B58900F63EC4 /* YQPersonalTableViewController.m */,
+				2F5177DC1F15B5CF00F63EC4 /* YQEnterpriseTableViewController.h */,
+				2F5177DD1F15B5CF00F63EC4 /* YQEnterpriseTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -146,6 +161,7 @@
 			children = (
 				2FD203451F14AEA1001A0CEB /* YQMineViewController.h */,
 				2FD203461F14AEA1001A0CEB /* YQMineViewController.m */,
+				2F5177E11F15BE0600F63EC4 /* YQMine.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -252,8 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FD203111F147C27001A0CEB /* LaunchScreen.storyboard in Resources */,
+				2F5177E21F15BE0600F63EC4 /* YQMine.storyboard in Resources */,
 				2FD2030E1F147C27001A0CEB /* Assets.xcassets in Resources */,
 				2FD2030C1F147C27001A0CEB /* Main.storyboard in Resources */,
+				2F5177E01F15BBE700F63EC4 /* YQHome.storyboard in Resources */,
 				2FD203331F148227001A0CEB /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,10 +285,12 @@
 			files = (
 				2FD203441F14A02F001A0CEB /* YQTabBar.m in Sources */,
 				2FD203411F14857A001A0CEB /* YQtabBarViewController.m in Sources */,
+				2F5177DE1F15B5CF00F63EC4 /* YQEnterpriseTableViewController.m in Sources */,
 				2FD203341F148227001A0CEB /* main.m in Sources */,
 				2FD2032E1F14817C001A0CEB /* AppDelegate.m in Sources */,
 				2FD203371F148289001A0CEB /* YQHomeViewController.m in Sources */,
 				2FD203471F14AEA1001A0CEB /* YQMineViewController.m in Sources */,
+				2F5177DB1F15B58900F63EC4 /* YQPersonalTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
