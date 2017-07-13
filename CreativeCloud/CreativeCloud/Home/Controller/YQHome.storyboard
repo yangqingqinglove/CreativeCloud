@@ -68,13 +68,15 @@
                                         </constraints>
                                         <state key="normal" image="search_index"/>
                                     </button>
-                                    <searchBar hidden="YES" clipsSubviews="YES" contentMode="scaleAspectFit" semanticContentAttribute="playback" placeholder="搜索" showsCancelButton="YES" translucent="NO" backgroundImage="text_field" scopeBarBackgroundImage="text_field" translatesAutoresizingMaskIntoConstraints="NO" id="sdN-4p-g90">
-                                        <rect key="frame" x="62.5" y="25" width="250" height="34"/>
+                                    <searchBar hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" placeholder="搜索" translucent="NO" backgroundImage="search_background2" translatesAutoresizingMaskIntoConstraints="NO" id="sdN-4p-g90">
+                                        <rect key="frame" x="47" y="26" width="281" height="28"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="iF6-YM-xKd"/>
-                                            <constraint firstAttribute="width" constant="250" id="t4q-RM-C3x"/>
+                                            <constraint firstAttribute="height" constant="28" id="iF6-YM-xKd"/>
                                         </constraints>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                         <scopeButtonTitles>
                                             <string>Title</string>
                                             <string>Title</string>
@@ -95,6 +97,9 @@
                                             <constraint firstAttribute="height" constant="33" id="jGN-kw-aHK"/>
                                         </constraints>
                                         <state key="normal" image="leftbtn"/>
+                                        <connections>
+                                            <action selector="leftNavBarButtonClick:" destination="Y9j-ES-gua" eventType="touchUpInside" id="Mpt-LI-UVU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -110,14 +115,16 @@
                                     <constraint firstAttribute="bottom" secondItem="guk-8s-Qtc" secondAttribute="bottom" id="ePK-6S-rYh"/>
                                     <constraint firstItem="guk-8s-Qtc" firstAttribute="top" secondItem="6Gh-Fy-RR8" secondAttribute="top" constant="16" id="gSI-r6-n9Y"/>
                                     <constraint firstAttribute="trailing" secondItem="guk-8s-Qtc" secondAttribute="trailing" id="gn2-Mc-V7c"/>
+                                    <constraint firstAttribute="trailing" secondItem="sdN-4p-g90" secondAttribute="trailing" constant="47" id="iwK-Mr-2X0"/>
                                     <constraint firstAttribute="bottom" secondItem="6P9-VK-cgT" secondAttribute="bottom" id="jVk-Gw-B4v"/>
-                                    <constraint firstAttribute="bottom" secondItem="sdN-4p-g90" secondAttribute="bottom" constant="5" id="jmt-vj-9c1"/>
+                                    <constraint firstAttribute="bottom" secondItem="sdN-4p-g90" secondAttribute="bottom" constant="10" id="jmt-vj-9c1"/>
                                     <constraint firstItem="syV-6V-RGt" firstAttribute="leading" secondItem="6Gh-Fy-RR8" secondAttribute="leading" id="pYd-lV-kgO"/>
                                     <constraint firstAttribute="trailing" secondItem="syV-6V-RGt" secondAttribute="trailing" id="qFN-nj-rgK"/>
                                     <constraint firstAttribute="bottom" secondItem="PVm-PF-mvF" secondAttribute="bottom" id="r2k-AX-VEK"/>
                                     <constraint firstItem="sdN-4p-g90" firstAttribute="centerX" secondItem="6Gh-Fy-RR8" secondAttribute="centerX" id="rdu-wJ-9Sa"/>
                                     <constraint firstItem="syV-6V-RGt" firstAttribute="top" secondItem="6Gh-Fy-RR8" secondAttribute="top" id="taj-mf-c4z"/>
                                     <constraint firstItem="6P9-VK-cgT" firstAttribute="centerX" secondItem="6Gh-Fy-RR8" secondAttribute="centerX" constant="25" id="tpV-jI-j2W"/>
+                                    <constraint firstItem="sdN-4p-g90" firstAttribute="leading" secondItem="6Gh-Fy-RR8" secondAttribute="leading" constant="47" id="xN5-WC-V6N"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -152,8 +159,8 @@
         <image name="cloud" width="27" height="17"/>
         <image name="leftbtn" width="21" height="21"/>
         <image name="line_person" width="35" height="22"/>
+        <image name="search_background2" width="282" height="28"/>
         <image name="search_index" width="15" height="15"/>
-        <image name="text_field" width="266" height="27"/>
         <image name="top" width="360" height="70"/>
     </resources>
 </document>
