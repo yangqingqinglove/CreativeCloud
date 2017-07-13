@@ -10,7 +10,7 @@
 #import "YQPersonalTableViewController.h"
 #import "YQEnterpriseTableViewController.h"
 #import "YQCategoryView.h"
-#import "Masonry.h"
+
 
 @interface YQHomeViewController ()<UIGestureRecognizerDelegate,YQCatergoryBtnClickDelegate>
 
@@ -25,7 +25,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *enterpriseBtn;
 @property (weak, nonatomic) IBOutlet UIImageView *topImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *navBackImage;
-
 
 // 通知监听的属性:
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
@@ -105,7 +104,9 @@
 
 -(YQPersonalTableViewController *)PersonalTvc{
     if(!_PersonalTvc){
-        _PersonalTvc =  [[YQPersonalTableViewController alloc]init];
+        UIStoryboard * sb = [UIStoryboard storyboardWithName:@"YQPersonal" bundle:nil];
+        
+        _PersonalTvc =  [sb instantiateInitialViewController];
     }
     return _PersonalTvc;
 }
@@ -198,9 +199,8 @@
         }];
     }
     
-    
     self.contentoffset = offsets;
-    NSLog(@"offsets === %f", offsets);
+    // NSLog(@"offsets === %f", offsets);
 }
 
 #pragma mark - 添加各种手势的方法

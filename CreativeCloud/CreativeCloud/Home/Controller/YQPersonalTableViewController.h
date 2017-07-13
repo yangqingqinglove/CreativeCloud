@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YQPersonalTableViewController : UITableViewController
+@interface YQPersonalTableViewController : UIViewController
 
 // 监听contentoffSets的值的变化
 @property(nonatomic,assign)CGFloat contentoffSets;
