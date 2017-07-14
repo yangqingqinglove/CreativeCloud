@@ -14,9 +14,61 @@
         <view contentMode="scaleToFill" id="jAV-PA-iV5" customClass="YQLatestSharing">
             <rect key="frame" x="0.0" y="0.0" width="373" height="169"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUt-ab-ill">
+                    <rect key="frame" x="0.0" y="0.0" width="373" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新分享" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPK-60-VHV">
+                            <rect key="frame" x="152" y="0.0" width="70" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sF9-kS-teV">
+                            <rect key="frame" x="343" y="4" width="30" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="JiX-J5-5NA"/>
+                                <constraint firstAttribute="height" constant="22" id="QfR-An-ACK"/>
+                            </constraints>
+                            <state key="normal" image="more"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="YPK-60-VHV" firstAttribute="centerX" secondItem="JUt-ab-ill" secondAttribute="centerX" id="1hb-Rq-dqn"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="84t-z1-rHl"/>
+                        <constraint firstAttribute="trailing" secondItem="sF9-kS-teV" secondAttribute="trailing" id="UUy-wD-0Mz"/>
+                        <constraint firstAttribute="bottom" secondItem="YPK-60-VHV" secondAttribute="bottom" id="Wr5-hx-sDh"/>
+                        <constraint firstItem="sF9-kS-teV" firstAttribute="centerY" secondItem="JUt-ab-ill" secondAttribute="centerY" id="aYz-po-lAt"/>
+                        <constraint firstAttribute="height" constant="30" id="eZU-JP-g1A"/>
+                        <constraint firstItem="YPK-60-VHV" firstAttribute="top" secondItem="JUt-ab-ill" secondAttribute="top" id="qhZ-Pb-McG"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CDc-7V-2sj">
+                    <rect key="frame" x="0.0" y="30" width="373" height="139"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Aom-77-ezk">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JUt-ab-ill" secondAttribute="trailing" id="3g5-bD-JhD"/>
+                <constraint firstItem="CDc-7V-2sj" firstAttribute="top" secondItem="JUt-ab-ill" secondAttribute="bottom" id="ECb-VL-hoJ"/>
+                <constraint firstAttribute="bottom" secondItem="CDc-7V-2sj" secondAttribute="bottom" id="IYu-8J-Gdo"/>
+                <constraint firstItem="JUt-ab-ill" firstAttribute="top" secondItem="jAV-PA-iV5" secondAttribute="top" id="L39-bg-6kU"/>
+                <constraint firstAttribute="trailing" secondItem="CDc-7V-2sj" secondAttribute="trailing" id="OQS-fe-Xy2"/>
+                <constraint firstItem="JUt-ab-ill" firstAttribute="leading" secondItem="jAV-PA-iV5" secondAttribute="leading" id="fmK-dS-jBg"/>
+                <constraint firstItem="CDc-7V-2sj" firstAttribute="leading" secondItem="jAV-PA-iV5" secondAttribute="leading" id="rgE-qW-eGP"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="145" y="-381"/>
+            <point key="canvasLocation" x="112" y="-294"/>
         </view>
     </objects>
+    <resources>
+        <image name="more" width="10" height="3"/>
+    </resources>
 </document>

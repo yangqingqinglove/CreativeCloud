@@ -45,7 +45,7 @@
 #pragma mark - 添加各种子控件的方法
 -(void)addChildContentView{
     //轮播图
-    YQCycleView * cycleV = [[YQCycleView alloc]initWithFrame:CGRectMake(0, 0, FullScreenWidth, 200)];
+    YQCycleView * cycleV = [[YQCycleView alloc]initWithFrame:CGRectMake(0, 0, FullScreenWidth, 204)];
     [self.contentScrollView addSubview:cycleV];
     
 //    [cycleV mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -61,7 +61,7 @@
     
     //headV
     YQPersonalHeadView * pHead =[YQPersonalHeadView personalHeadMenu];
-    pHead.frame = CGRectMake(0, self.cycleView.sd_height - 8, FullScreenWidth, 126);
+    pHead.frame = CGRectMake(0, self.cycleView.sd_height - 8, FullScreenWidth, 132);
     [self.contentScrollView addSubview:pHead];
 //    [pHead mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.left.right.equalTo(self.contentScrollView).offset(0);
@@ -74,7 +74,7 @@
 
     //客户作品
     YQUserWorks * userWorks = [YQUserWorks userWorksMenu];
-    userWorks.frame = CGRectMake(0, self.personalHV.sd_y + self.personalHV.sd_height + 5, FullScreenWidth, 183);
+    userWorks.frame = CGRectMake(0, self.personalHV.sd_y + self.personalHV.sd_height + 5, FullScreenWidth, 191);
     [self.contentScrollView addSubview:userWorks];
 //    [userWorks mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.left.right.equalTo(self.contentScrollView).offset(0);
@@ -88,7 +88,7 @@
     //最新分享
     YQLatestSharing * latest = [YQLatestSharing latestSharingMenu];
     [self.contentScrollView addSubview:latest];
-    latest.frame = CGRectMake(0, self.userWorks.sd_y + self.userWorks.sd_height +5, FullScreenWidth, 159);
+    latest.frame = CGRectMake(0, self.userWorks.sd_y + self.userWorks.sd_height + 5, FullScreenWidth, 165);
 //    [latest mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.left.right.equalTo(self.contentScrollView).offset(0);
 //        make.top.equalTo(self.userWorks.mas_bottom).offset(5);
@@ -100,7 +100,7 @@
     
     //朋友圈创意
     YQFriendsCreative * friends = [YQFriendsCreative friendsCreativeMenu];
-    friends.frame = CGRectMake(0, self.latestSharing.sd_y + self.latestSharing.sd_height + 5, FullScreenWidth, 207);
+    friends.frame = CGRectMake(0, self.latestSharing.sd_y + self.latestSharing.sd_height + 5, FullScreenWidth, 215);
     [self.contentScrollView addSubview:friends];
     
 //    [friends mas_makeConstraints:^(MASConstraintMaker *make) {

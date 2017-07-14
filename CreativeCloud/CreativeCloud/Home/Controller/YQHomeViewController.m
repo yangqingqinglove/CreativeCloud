@@ -25,6 +25,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *enterpriseBtn;
 @property (weak, nonatomic) IBOutlet UIImageView *topImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *navBackImage;
+@property (weak, nonatomic) IBOutlet UIButton *searchButton;
+
 
 // 通知监听的属性:
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
@@ -34,6 +36,9 @@
 
 // 分类的视图
 @property(nonatomic,strong)YQCategoryView * categoryView;
+// 蒙版视图
+@property(nonatomic,strong)UIImageView * maskImageV;
+
 
 
 
@@ -61,13 +66,12 @@
     self.categoryView = categoryView;
     self.categoryView.hidden = YES;
     [self.categoryView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.navBar.mas_bottom).offset(10);
+        make.center.equalTo(self.view);
         make.left.equalTo(self.view.mas_left).offset(8);
         make.right.equalTo(self.view.mas_right).offset(-8);
         make.height.equalTo(@140);
         
     }];
-    [self.view bringSubviewToFront:self.categoryView];
     
     
     //接受各种通知的情况
@@ -89,6 +93,7 @@
     // 设置置顶视图的
     [self.view bringSubviewToFront:self.navBar];
     [self.view bringSubviewToFront:self.topImageView];
+    [self.view bringSubviewToFront:self.categoryView];
 
 }
 
@@ -109,6 +114,21 @@
         _PersonalTvc =  [sb instantiateInitialViewController];
     }
     return _PersonalTvc;
+}
+
+-(UIImageView *)maskImageV{
+    if(!_maskImageV){
+        _maskImageV = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"transparent"]];
+        _maskImageV.frame = self.view.bounds;
+        _maskImageV.alpha = 0.4;
+        _maskImageV.userInteractionEnabled = YES;
+        
+        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(maskImageViewClick:)];
+        [_maskImageV addGestureRecognizer:tap];
+        
+    }
+
+    return _maskImageV;
 }
 
 
@@ -171,9 +191,9 @@
             self.leftButton.hidden = NO;
             self.rightButton.hidden = NO;
             
+            self.searchButton.hidden = YES;
             self.enterpriseBtn.hidden = YES;
             self.personalBtn.hidden = YES;
-            
             
             self.navBackImage.alpha = 1;
             self.navBackImage.hidden = NO;
@@ -189,10 +209,10 @@
             self.leftButton.hidden = YES;
             self.rightButton.hidden = YES;
             
+            self.searchButton.hidden = NO;
             self.enterpriseBtn.hidden = NO;
             self.personalBtn.hidden = NO;
             
-
             self.navBackImage.alpha = 0;
             self.navBackImage.hidden = YES;
             
@@ -282,14 +302,39 @@
 }
 
 -(void)tap:(UITapGestureRecognizer *)tap{
-
+    //添加蒙版,设置hidden
     self.categoryView.hidden = !self.categoryView.hidden;
-
+    if(self.categoryView.hidden == NO){//添加蒙版
+        [self.view addSubview:self.maskImageV];
+       
+    }else{//移除蒙版
+        
+        [self.maskImageV removeFromSuperview];
+    
+    }
 }
+
+-(void)maskImageViewClick:(UIGestureRecognizer *)tap{
+    
+    self.categoryView.hidden = !self.categoryView.hidden;
+    [self.maskImageV removeFromSuperview];
+    
+}
+
 
 #pragma mark - navViewButton点击实现的方法
 - (IBAction)leftNavBarButtonClick:(UIButton *)sender {
-     self.categoryView.hidden = !self.categoryView.hidden;
+    // 添加蒙版,设置hidden
+    self.categoryView.hidden = !self.categoryView.hidden;
+    if(self.categoryView.hidden == NO){//添加蒙版
+        [self.view addSubview:self.maskImageV];
+        
+
+    }else{//移除蒙版
+        [self.maskImageV removeFromSuperview];
+        
+    }
+
 }
 
 
@@ -298,7 +343,17 @@
     //弹窗播放对应的视频窗口!
     switch (from) {
         case 0:{
+            // 添加蒙版,设置hidden
+            
             self.categoryView.hidden = !self.categoryView.hidden;
+            if(self.categoryView.hidden == NO){//添加蒙版
+                [self.view addSubview:self.maskImageV];
+
+            }else{//移除蒙版
+                [self.maskImageV removeFromSuperview];
+                
+            }
+
             break;
         }
             

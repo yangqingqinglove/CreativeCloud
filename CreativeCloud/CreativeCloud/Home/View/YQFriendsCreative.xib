@@ -14,9 +14,61 @@
         <view contentMode="scaleToFill" id="JEL-Uk-U1G" customClass="YQFriendsCreative">
             <rect key="frame" x="0.0" y="0.0" width="361" height="143"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BEf-eo-DU5">
+                    <rect key="frame" x="0.0" y="0.0" width="361" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朋友圈创意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQJ-e1-hOa">
+                            <rect key="frame" x="137" y="0.0" width="87" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dM0-jN-mr7">
+                            <rect key="frame" x="331" y="4" width="30" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="UT8-13-klU"/>
+                                <constraint firstAttribute="height" constant="22" id="wB1-8j-rBn"/>
+                            </constraints>
+                            <state key="normal" image="more"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="El6-4a-76y"/>
+                        <constraint firstAttribute="bottom" secondItem="oQJ-e1-hOa" secondAttribute="bottom" id="Snj-qs-9uX"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="VO6-YJ-L9e"/>
+                        <constraint firstItem="dM0-jN-mr7" firstAttribute="centerY" secondItem="BEf-eo-DU5" secondAttribute="centerY" id="X1g-nL-cqb"/>
+                        <constraint firstAttribute="trailing" secondItem="dM0-jN-mr7" secondAttribute="trailing" id="Z5A-nY-uZ8"/>
+                        <constraint firstItem="oQJ-e1-hOa" firstAttribute="top" secondItem="BEf-eo-DU5" secondAttribute="top" id="dQr-0w-kyA"/>
+                        <constraint firstItem="oQJ-e1-hOa" firstAttribute="centerX" secondItem="BEf-eo-DU5" secondAttribute="centerX" id="kDa-8T-O6G"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rcf-t7-qFz">
+                    <rect key="frame" x="0.0" y="30" width="361" height="113"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OC2-iY-SdJ">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BEf-eo-DU5" secondAttribute="trailing" id="53R-41-uWA"/>
+                <constraint firstItem="BEf-eo-DU5" firstAttribute="leading" secondItem="JEL-Uk-U1G" secondAttribute="leading" id="EHb-W2-RGQ"/>
+                <constraint firstItem="rcf-t7-qFz" firstAttribute="top" secondItem="BEf-eo-DU5" secondAttribute="bottom" id="GcB-CK-acQ"/>
+                <constraint firstItem="rcf-t7-qFz" firstAttribute="leading" secondItem="JEL-Uk-U1G" secondAttribute="leading" id="Q2a-qg-Qwz"/>
+                <constraint firstItem="BEf-eo-DU5" firstAttribute="top" secondItem="JEL-Uk-U1G" secondAttribute="top" id="Vgl-Mj-l8S"/>
+                <constraint firstAttribute="trailing" secondItem="rcf-t7-qFz" secondAttribute="trailing" id="uDT-xT-1Wh"/>
+                <constraint firstAttribute="bottom" secondItem="rcf-t7-qFz" secondAttribute="bottom" id="uLY-yA-Bfx"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-5" y="-123"/>
+            <point key="canvasLocation" x="-67" y="-94"/>
         </view>
     </objects>
+    <resources>
+        <image name="more" width="10" height="3"/>
+    </resources>
 </document>

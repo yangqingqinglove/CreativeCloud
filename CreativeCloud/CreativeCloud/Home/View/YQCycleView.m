@@ -74,19 +74,21 @@
     
     if(self = [super initWithFrame:frame]){
         
-        NSArray *imageNames = @[@"01.jpg",
-                                @"02.jpg",
-                                @"03.jpg",
-                                @"04.jpg",
-                                @"05.jpg" // 本地图片请填写全名
+        NSArray *imageNames = @[@"top_banner1.png",
+                                @"top_banner2.png",
+                                @"top_banner3.png",
+                                @"top_banner4.png",
+                                // 本地图片请填写全名
+                                // 网络图片是填写url
                                 ];
         
-        SDCycleScrollView *cycleScrollView2 = [SDCycleScrollView cycleScrollViewWithFrame:self.bounds delegate:self placeholderImage:[UIImage imageNamed:@"1.jpg"]];
+        SDCycleScrollView *cycleScrollView2 = [SDCycleScrollView cycleScrollViewWithFrame:self.bounds delegate:self placeholderImage:[UIImage imageNamed:@"top_banner1.png"]];
         
         cycleScrollView2.pageControlAliment = SDCycleScrollViewPageContolAlimentCenter;
         cycleScrollView2.localizationImageNamesGroup = imageNames;
         
-        cycleScrollView2.currentPageDotColor = [UIColor whiteColor]; // 自定义分页控件小圆标颜色
+        cycleScrollView2.currentPageDotImage = [UIImage imageNamed:@"mobile_banner_click"]; // 自定义分页控件小圆标颜色
+        cycleScrollView2.pageDotImage = [UIImage imageNamed:@"mobile_banner"];
          // cycleScrollView.delegate = ; // 如需监听图片点击，请设置代理，实现代理方法
         cycleScrollView2.autoScrollTimeInterval = 4.0;
     

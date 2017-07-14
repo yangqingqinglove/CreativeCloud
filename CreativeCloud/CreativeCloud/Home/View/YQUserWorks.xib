@@ -14,9 +14,54 @@
         <view contentMode="scaleToFill" id="plh-LE-EwT" customClass="YQUserWorks">
             <rect key="frame" x="0.0" y="0.0" width="430" height="217"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W53-MX-cQq">
+                    <rect key="frame" x="0.0" y="0.0" width="430" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客户作品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6az-bF-rj3">
+                            <rect key="frame" x="180.5" y="0.0" width="69.5" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="no4-o8-Lpd">
+                            <rect key="frame" x="400" y="4" width="30" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="3kF-LH-iw2"/>
+                                <constraint firstAttribute="width" constant="30" id="8sN-PI-Lan"/>
+                            </constraints>
+                            <state key="normal" image="more"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="6az-bF-rj3" secondAttribute="bottom" id="CAF-4k-S6b"/>
+                        <constraint firstItem="no4-o8-Lpd" firstAttribute="centerY" secondItem="W53-MX-cQq" secondAttribute="centerY" id="NZV-qY-26g"/>
+                        <constraint firstAttribute="trailing" secondItem="no4-o8-Lpd" secondAttribute="trailing" id="fAa-tm-upO"/>
+                        <constraint firstItem="6az-bF-rj3" firstAttribute="top" secondItem="W53-MX-cQq" secondAttribute="top" id="nRz-R2-gsO"/>
+                        <constraint firstAttribute="height" constant="30" id="qGp-LP-YRy"/>
+                        <constraint firstItem="6az-bF-rj3" firstAttribute="centerX" secondItem="W53-MX-cQq" secondAttribute="centerX" id="uGj-Iq-nCt"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NdB-f8-gfL" customClass="YQUserWorkCycleView">
+                    <rect key="frame" x="0.0" y="30" width="430" height="187"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NdB-f8-gfL" secondAttribute="trailing" id="R6r-7n-Iec"/>
+                <constraint firstItem="NdB-f8-gfL" firstAttribute="leading" secondItem="plh-LE-EwT" secondAttribute="leading" id="fQ2-ft-5VP"/>
+                <constraint firstItem="W53-MX-cQq" firstAttribute="top" secondItem="plh-LE-EwT" secondAttribute="top" id="lfx-B0-Srf"/>
+                <constraint firstAttribute="trailing" secondItem="W53-MX-cQq" secondAttribute="trailing" id="ne7-6d-PGC"/>
+                <constraint firstItem="W53-MX-cQq" firstAttribute="leading" secondItem="plh-LE-EwT" secondAttribute="leading" id="smd-kB-5wI"/>
+                <constraint firstAttribute="bottom" secondItem="NdB-f8-gfL" secondAttribute="bottom" id="uE9-03-zEV"/>
+                <constraint firstItem="NdB-f8-gfL" firstAttribute="top" secondItem="W53-MX-cQq" secondAttribute="bottom" id="w19-bw-XQM"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-137" y="-283"/>
+            <point key="canvasLocation" x="-125" y="-285"/>
         </view>
     </objects>
+    <resources>
+        <image name="more" width="10" height="3"/>
+    </resources>
 </document>
