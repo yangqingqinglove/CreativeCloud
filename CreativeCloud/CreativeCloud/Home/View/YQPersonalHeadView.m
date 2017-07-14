@@ -12,8 +12,7 @@
 
 +(instancetype)personalHeadMenu{
     
-    
-    return nil;
+    return [[[NSBundle mainBundle]loadNibNamed:@"YQPersonalHead" owner:nil options:nil] lastObject];
 }
 
 @end

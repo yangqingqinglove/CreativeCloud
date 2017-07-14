@@ -28,11 +28,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CreativeCloud/Home/Controller/YQPersonalTableViewController.m"
-            timestampString = "521638045.450565"
+            timestampString = "521696245.490342"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "-addChildContentView"
             landmarkType = "7">
          </BreakpointContent>

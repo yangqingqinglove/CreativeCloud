@@ -10,6 +10,9 @@
 
 @implementation YQUserWorks
 
++(instancetype)userWorksMenu{
 
+    return [[[NSBundle mainBundle]loadNibNamed:@"YQUserWorks" owner:nil options:nil] lastObject];
+}
 
 @end

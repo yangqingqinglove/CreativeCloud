@@ -14,7 +14,7 @@
         <view contentMode="scaleToFill" id="JEL-Uk-U1G" customClass="YQFriendsCreative">
             <rect key="frame" x="0.0" y="0.0" width="361" height="143"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-5" y="-123"/>
         </view>

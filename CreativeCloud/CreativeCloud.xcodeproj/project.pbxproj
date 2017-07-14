@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F5011B61F1863FA00AF2E26 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5011B51F1863FA00AF2E26 /* UIView+SDExtension.m */; };
 		2F5177DB1F15B58900F63EC4 /* YQPersonalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5177DA1F15B58900F63EC4 /* YQPersonalTableViewController.m */; };
 		2F5177DE1F15B5CF00F63EC4 /* YQEnterpriseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5177DD1F15B5CF00F63EC4 /* YQEnterpriseTableViewController.m */; };
 		2F5177E01F15BBE700F63EC4 /* YQHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5177DF1F15BBE700F63EC4 /* YQHome.storyboard */; };
@@ -76,6 +77,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F5011B41F1863FA00AF2E26 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		2F5011B51F1863FA00AF2E26 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 		2F5177D91F15B58900F63EC4 /* YQPersonalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQPersonalTableViewController.h; sourceTree = "<group>"; };
 		2F5177DA1F15B58900F63EC4 /* YQPersonalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQPersonalTableViewController.m; sourceTree = "<group>"; };
 		2F5177DC1F15B5CF00F63EC4 /* YQEnterpriseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQEnterpriseTableViewController.h; sourceTree = "<group>"; };
@@ -211,9 +214,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F5011B31F1863EF00AF2E26 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2F5011B41F1863FA00AF2E26 /* UIView+SDExtension.h */,
+				2F5011B51F1863FA00AF2E26 /* UIView+SDExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		2FC4596E1F1747CE00C84DA7 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				2F5011B31F1863EF00AF2E26 /* Category */,
 				2FC459AF1F1768E100C84DA7 /* SDWebImage */,
 				2FC459981F17687300C84DA7 /* SDCycleScrollView */,
 				2FC4596F1F1747CE00C84DA7 /* Masonry */,
@@ -618,6 +631,7 @@
 				2FC459911F1747CE00C84DA7 /* View+MASAdditions.m in Sources */,
 				2FC4598C1F1747CE00C84DA7 /* MASLayoutConstraint.m in Sources */,
 				2FC459F91F1772EC00C84DA7 /* YQFriendsCreative.m in Sources */,
+				2F5011B61F1863FA00AF2E26 /* UIView+SDExtension.m in Sources */,
 				2FC459A91F17687300C84DA7 /* TAAnimatedDotView.m in Sources */,
 				2FC459D81F1768E100C84DA7 /* SDWebImageDecoder.m in Sources */,
 				2FC459AA1F17687300C84DA7 /* TADotView.m in Sources */,
@@ -769,6 +783,7 @@
 				DEVELOPMENT_TEAM = HVL2C5A8LT;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CreativeCloud/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = CreativeCloud/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HN.CreativeCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -782,6 +797,7 @@
 				DEVELOPMENT_TEAM = HVL2C5A8LT;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CreativeCloud/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = CreativeCloud/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HN.CreativeCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -14,7 +14,7 @@
         <view contentMode="scaleToFill" id="jAV-PA-iV5" customClass="YQLatestSharing">
             <rect key="frame" x="0.0" y="0.0" width="373" height="169"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="145" y="-381"/>
         </view>

@@ -70,12 +70,9 @@
                                     </button>
                                     <searchBar hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" placeholder="搜索" translucent="NO" backgroundImage="search_background2" translatesAutoresizingMaskIntoConstraints="NO" id="sdN-4p-g90">
                                         <rect key="frame" x="47" y="33" width="281" height="28"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="iF6-YM-xKd"/>
                                         </constraints>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                         <scopeButtonTitles>
                                             <string>Title</string>
