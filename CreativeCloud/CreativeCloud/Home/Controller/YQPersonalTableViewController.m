@@ -15,6 +15,7 @@
 #import "YQLatestSharing.h"
 #import "YQFriendsCreative.h"
 #import "YQHotRecommendation.h"
+#import "YQUserWorkCycleView.h"
 
 @interface YQPersonalTableViewController ()<UIScrollViewDelegate>
 
@@ -38,7 +39,12 @@
     [super viewDidLoad];
     // 1.添加各种子cell控件
     [self addChildContentView];
+}
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    
 }
 
 
@@ -74,6 +80,8 @@
 
     //客户作品
     YQUserWorks * userWorks = [YQUserWorks userWorksMenu];
+    NSLog(@"%@",NSStringFromCGRect(userWorks.cycleView.frame));
+    
     userWorks.frame = CGRectMake(0, self.personalHV.sd_y + self.personalHV.sd_height + 5, FullScreenWidth, 191);
     [self.contentScrollView addSubview:userWorks];
 //    [userWorks mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -82,9 +90,20 @@
 //        make.height.equalTo(@183);
 //        
 //    }];
-    self.userWorks = userWorks;
     
+    self.userWorks = userWorks;
+    //然后再重新加载轮播图
+    
+    YQUserWorkCycleView * cycleV2 = [[YQUserWorkCycleView alloc]init];
+    [self.userWorks.cycleView  addSubview:cycleV2];
+    [cycleV2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.left.right.bottom.equalTo(self.userWorks.cycleView).offset(0);
+        make.top.equalTo(self.userWorks.cycleView.mas_top).offset(30);
 
+    }];
+    
+    
     //最新分享
     YQLatestSharing * latest = [YQLatestSharing latestSharingMenu];
     [self.contentScrollView addSubview:latest];
@@ -102,7 +121,6 @@
     YQFriendsCreative * friends = [YQFriendsCreative friendsCreativeMenu];
     friends.frame = CGRectMake(0, self.latestSharing.sd_y + self.latestSharing.sd_height + 5, FullScreenWidth, 215);
     [self.contentScrollView addSubview:friends];
-    
 //    [friends mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.left.right.equalTo(self.contentScrollView).offset(0);
 //        make.top.equalTo(self.latestSharing.mas_bottom).offset(5);

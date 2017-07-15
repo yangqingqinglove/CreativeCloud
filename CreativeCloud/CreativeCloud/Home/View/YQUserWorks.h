@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YQUserWorkCycleView.h"
 
 @interface YQUserWorks : UIView
 
+
+@property (weak, nonatomic) IBOutlet YQUserWorkCycleView *cycleView;
+
+
 +(instancetype)userWorksMenu;
+
 
 @end

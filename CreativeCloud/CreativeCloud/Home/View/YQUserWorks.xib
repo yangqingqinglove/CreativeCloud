@@ -45,19 +45,22 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NdB-f8-gfL" customClass="YQUserWorkCycleView">
                     <rect key="frame" x="0.0" y="30" width="430" height="187"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
             </subviews>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="NdB-f8-gfL" secondAttribute="trailing" id="R6r-7n-Iec"/>
+                <constraint firstItem="NdB-f8-gfL" firstAttribute="top" secondItem="plh-LE-EwT" secondAttribute="top" constant="30" id="WAQ-eU-zzg"/>
                 <constraint firstItem="NdB-f8-gfL" firstAttribute="leading" secondItem="plh-LE-EwT" secondAttribute="leading" id="fQ2-ft-5VP"/>
                 <constraint firstItem="W53-MX-cQq" firstAttribute="top" secondItem="plh-LE-EwT" secondAttribute="top" id="lfx-B0-Srf"/>
                 <constraint firstAttribute="trailing" secondItem="W53-MX-cQq" secondAttribute="trailing" id="ne7-6d-PGC"/>
                 <constraint firstItem="W53-MX-cQq" firstAttribute="leading" secondItem="plh-LE-EwT" secondAttribute="leading" id="smd-kB-5wI"/>
                 <constraint firstAttribute="bottom" secondItem="NdB-f8-gfL" secondAttribute="bottom" id="uE9-03-zEV"/>
-                <constraint firstItem="NdB-f8-gfL" firstAttribute="top" secondItem="W53-MX-cQq" secondAttribute="bottom" id="w19-bw-XQM"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cycleView" destination="NdB-f8-gfL" id="bfy-a6-MQf"/>
+            </connections>
             <point key="canvasLocation" x="-125" y="-285"/>
         </view>
     </objects>
